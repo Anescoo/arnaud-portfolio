@@ -12,7 +12,7 @@ server.get('/', (req, res) => {
 
 })
 
-server.use(express.static('css'))
+server.use(express.static('css','fonts','images','inc','js'))
 server.use('/css', express.static(__dirname + '/css'))
 server.use('/fonts', express.static(__dirname + 'fonts'))
 server.use('/images', express.static(__dirname + 'images'))
