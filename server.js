@@ -9,8 +9,6 @@ var server = express();
 server.get('/', (req, res) => {
 	res.setHeader('Content-Type','text/html')
 	res.sendFile(path.join(__dirname ,'index.html'))
-	server.use(express.static('css'));
-	server.use('/css', express.static(__dirname + '/css'));
 })
 
 server.listen(port, ()=> {
